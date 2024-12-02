@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Multimedia Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .section {
+            margin: 50px 0;
+        }
+        
+        .back-to-top {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: #333;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+        }
+        
+        .skip-nav:focus {
+            top: 10px;
+        }
+        
+        .photo-gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .audio-player {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .audio-player audio {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Our Multimedia Website</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="resources/index.html">External Resources</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container" id="main-content">
+        <p>Welcome! Explore the sections below to learn more about our site.</p>
+
+        <!-- Section 1 -->
+        <div class="section" id="section1">
+            <h2>Section 1</h2>
+            <p>Content for section 1.</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+            <h2>Section 2</h2>
+            <p>Content for section 2.</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+            <h2>Section 3</h2>
+            <p>Content for section 3.</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="section photo-gallery" id="gallery">
+            <h2>Photo Gallery</h2>
+            <img src=" C:\Users\Basel Hammad\Downloads\marina-reich-i42aC1uV5tk-unsplash.jpg " alt="A scenic landscape ">
+            <img src="c:\Users\Basel Hammad\Downloads\gabor-koszegi-xpQ4GNj3shc-unsplash.jpg " alt="A bustling cityscape ">
+            <img src="c:\Users\Basel Hammad\Downloads\alexander-akimenko-tWWdVrUSeik-unsplash.jpg " alt="A serene beach ">
+            <p>Enjoy these beautiful images from around the world.</p>
+            <a href="#top " class="back-to-top ">Back to Top</a>
+        </div>
+
+        <!-- Audio Section -->
+        <div class="section audio-player " id="audio ">
+            <h2>Listen to Audio</h2>
+            <audio controls>
+                <source src="c:\Users\Basel Hammad\Downloads\bensound-nativeamerican.mp3 " type="audio/mpeg ">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Relax and listen to this soothing audio track.</p>
+            <a href="#top " class="back-to-top ">Back to Top</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Contact Information</h3>
+        <p>Email us at: <a href="mailto:contact@example.com ">contact@example.com</a></p>
+        <p>&copy; <span id="current-year "></span> Multimedia Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamic Footer Year
+        document.getElementById("current-year ").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
